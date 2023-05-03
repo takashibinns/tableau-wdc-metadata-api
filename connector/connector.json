@@ -1,0 +1,28 @@
+{
+  "name": "TableauCloud_MetadataAPI",
+  "version": "1.0.1",
+  "tableau-version": {
+    "min": "2023.1"
+  },
+  "vendor": {
+    "name": "Beta",
+    "support-link": "https://developer.tableau.com",
+    "email": "developer@tableau.com"
+  },
+  "permission": {
+    "api": {
+      "https://*.online.tableau.com/": [
+        "GET",
+        "POST",
+        "HEAD"
+      ]
+    }
+  },
+  "auth": {
+    "type": "custom"
+  },
+  "window": {
+    "height": 800,
+    "width": 600
+  }
+}

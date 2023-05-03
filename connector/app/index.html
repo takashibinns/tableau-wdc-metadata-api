@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Custom Auth Sample Connector</title>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <link rel="shortcut icon" href="#" />
+  <link href="index.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="index.js" type="module"></script>
+</head>
+
+<body>
+  <p id="error" style="display: block; margin-top: 2em; height: 5px; text-align: center; color: red;"></p>
+ 
+  <div class="box m-auto ">
+    <div class="card">
+      <div class="card-header">
+        Tableau Cloud: Metadata API Connector
+      </div>
+
+      <div class="card-body">
+
+        <label for="siteUrl" class="form-label">Tableau Cloud Site URL</label>
+        <input  type="text" id="siteUrl" class="form-control mb-3" placeholder="https://us-east-1.online.tableau.com/#/site/devplatembed/home">
+
+        <label for="patName" class="form-label">PAT Name</label>
+        <input type="text" id="patName" class="form-control mb-3" placeholder="Name">
+
+        <label for="patValue" class="form-label">PAT Value</label>
+        <input type="password" id="patValue" class="form-control mb-4" placeholder="Value">
+
+        <label for="query" class="form-label">Metadata Query</label>
+        <textarea type="text" id="query" class="form-control mb-4" placeholder="{ databases { id name } }">
+        </textarea>
+
+        <div class=" text-center">
+          <button type="button" class="btn btn-success" id="submitButton" disabled> Please wait while settings load...</button>
+        </div>
+  
+      </div>
+
+    </div>
+  </div>
+ 
+</body>
+
+</html>

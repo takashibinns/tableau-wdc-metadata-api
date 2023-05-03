@@ -1,0 +1,37 @@
+{
+  "name": "tableau-metadata-connector",
+  "description": "Custom Auth Sample Connector",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tableau/taco-toolkit": "1.2.0"
+  },
+  "scripts": {
+    "build": "taco-scripts build",
+    "clean": "taco-scripts clean --all",
+    "start": "taco-scripts start"
+  },
+  "targets": {
+    "handlers": {
+      "includeNodeModules": true,
+      "sourceMap": false,
+      "context": "web-worker",
+      "distDir": "../dist/handlers",
+      "outputFormat": "commonjs",
+      "isLibrary": false,
+      "optimize": false
+    },
+    "app": {
+      "publicUrl": "./",
+      "distDir": "../dist/app",
+      "engines": {
+        "browsers": "Chrome 70"
+      }
+    }
+  },
+  "alias": {
+    "process": false,
+    "path": false,
+    "util": false
+  }
+}
