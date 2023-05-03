@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "taco-scripts build",
-    "clean": "taco-scripts clean --all",
+    "clean": "taco-scripts clean",
     "start": "taco-scripts start"
   },
   "targets": {
