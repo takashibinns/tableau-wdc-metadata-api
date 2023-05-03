@@ -11,8 +11,13 @@ log*
 # Local files
 .DS_Store
 
+# node_modules
+*node_modules*
+
 # Tableau files that get generated during the build process
 *.taco
 *connection-fields.xml
 *connection-metadata.xml
 *manifest.xml
+*.parcel-cache*
+*dist*
